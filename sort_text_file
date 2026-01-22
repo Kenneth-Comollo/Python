@@ -1,0 +1,6 @@
+import re
+
+def sort_key(line):
+  match = re.match(r"(\d+)([a-zA-Z])", line)
+  if not match:
+    return ("", 0)
